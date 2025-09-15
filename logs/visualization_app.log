@@ -1,0 +1,105 @@
+2025-09-15 14:42:58,227 - src.data_acquisition.data_fetcher - WARNING - Tushare API 配置缺失
+2025-09-15 14:42:58,229 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:43:05,705 - src.data_acquisition.data_fetcher - WARNING - Tushare API 配置缺失
+2025-09-15 14:43:05,726 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:43:05,736 - src.data_acquisition.data_fetcher - WARNING - Tushare API 配置缺失
+2025-09-15 14:43:05,738 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:43:14,710 - tensorflow - WARNING - From G:\software\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-09-15 14:43:22,784 - src.data_acquisition.data_fetcher - WARNING - Tushare API 配置缺失
+2025-09-15 14:43:22,787 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:43:23,813 - StockTraderVisualization - INFO - 尝试获取股票代码 002501.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 14:43:23,813 - src.data_acquisition.data_fetcher - INFO - 尝试使用AkShare获取002501.SZ日线数据
+2025-09-15 14:43:23,813 - src.data_acquisition.data_fetcher - ERROR - AkShare获取002501.SZ日线数据失败: stock_zh_a_daily() got an unexpected keyword argument 'period'
+2025-09-15 14:43:23,815 - src.data_acquisition.data_fetcher - ERROR - 所有数据源获取002501.SZ日线数据均失败
+2025-09-15 14:43:23,815 - StockTraderVisualization - WARNING - 无法获取股票代码 002501.SZ 的数据，将使用模拟数据
+2025-09-15 14:44:42,956 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:44:42,957 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:44:44,772 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:44:44,773 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:44:49,595 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:44:49,596 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:44:50,378 - tensorflow - WARNING - From G:\software\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-09-15 14:44:51,939 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:44:51,940 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:44:52,947 - StockTraderVisualization - INFO - 尝试获取股票代码 002501.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 14:44:53,288 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取002501.SZ日线数据成功，共241条记录
+2025-09-15 14:44:53,295 - StockTraderVisualization - INFO - 成功获取股票代码 002501.SZ 的数据，共 241 条记录
+2025-09-15 14:44:53,512 - StockTraderVisualization - ERROR - 分析过程中出错: 'volume'
+2025-09-15 14:45:04,872 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:45:04,872 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:47:44,902 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:47:44,903 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:47:51,889 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:47:51,890 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:47:51,890 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:47:51,890 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:47:54,051 - tensorflow - WARNING - From G:\software\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-09-15 14:48:12,770 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:48:12,771 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:50:59,831 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:50:59,832 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:51:00,854 - StockTraderVisualization - INFO - 尝试获取股票代码 002501.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 14:51:01,185 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取002501.SZ日线数据成功，共241条记录
+2025-09-15 14:51:01,200 - StockTraderVisualization - INFO - 成功获取股票代码 002501.SZ 的数据，共 241 条记录
+2025-09-15 14:53:23,839 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:53:23,840 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:53:23,841 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:53:23,842 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:53:23,844 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:53:23,857 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:53:30,983 - tensorflow - WARNING - From G:\software\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-09-15 14:53:38,477 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:53:38,478 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:54:25,410 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 14:54:25,410 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 14:54:26,431 - StockTraderVisualization - INFO - 尝试获取股票代码 002501.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 14:54:26,824 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取002501.SZ日线数据成功，共241条记录
+2025-09-15 14:54:26,836 - StockTraderVisualization - INFO - 成功获取股票代码 002501.SZ 的数据，共 241 条记录
+2025-09-15 15:06:09,945 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:06:09,946 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:06:11,062 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:06:11,063 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:06:12,086 - StockTraderVisualization - INFO - 尝试获取股票代码 603002.SH 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:06:12,464 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取603002.SH日线数据成功，共241条记录
+2025-09-15 15:06:12,477 - StockTraderVisualization - INFO - 成功获取股票代码 603002.SH 的数据，共 241 条记录
+2025-09-15 15:06:37,607 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:06:37,612 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:06:38,783 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:06:38,785 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:06:39,821 - StockTraderVisualization - INFO - 尝试获取股票代码 600237.SH 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:06:40,098 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取600237.SH日线数据成功，共241条记录
+2025-09-15 15:06:40,110 - StockTraderVisualization - INFO - 成功获取股票代码 600237.SH 的数据，共 241 条记录
+2025-09-15 15:07:51,920 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:07:51,921 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:07:53,201 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:07:53,202 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:07:54,227 - StockTraderVisualization - INFO - 尝试获取股票代码 600968.SH 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:07:54,761 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取600968.SH日线数据成功，共241条记录
+2025-09-15 15:07:54,772 - StockTraderVisualization - INFO - 成功获取股票代码 600968.SH 的数据，共 241 条记录
+2025-09-15 15:11:56,373 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:11:56,374 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:11:59,226 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:11:59,227 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:12:00,249 - StockTraderVisualization - INFO - 尝试获取股票代码 002329.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:12:00,741 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取002329.SZ日线数据成功，共241条记录
+2025-09-15 15:12:00,754 - StockTraderVisualization - INFO - 成功获取股票代码 002329.SZ 的数据，共 241 条记录
+2025-09-15 15:12:25,016 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:12:25,017 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:12:26,197 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:12:26,198 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:12:27,224 - StockTraderVisualization - INFO - 尝试获取股票代码 600172.SH 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:12:27,491 - src.data_acquisition.data_fetcher - INFO - 通过Tushare获取600172.SH日线数据成功，共241条记录
+2025-09-15 15:12:27,504 - StockTraderVisualization - INFO - 成功获取股票代码 600172.SH 的数据，共 241 条记录
+2025-09-15 15:12:59,677 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:12:59,680 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:13:00,845 - src.data_acquisition.data_fetcher - INFO - Tushare API 初始化成功
+2025-09-15 15:13:00,845 - src.data_acquisition.data_fetcher - INFO - AkShare 模块加载成功
+2025-09-15 15:13:01,877 - StockTraderVisualization - INFO - 尝试获取股票代码 588030.SZ 的数据，日期范围: 20240915 到 20250915
+2025-09-15 15:13:02,824 - src.data_acquisition.data_fetcher - INFO - 尝试使用AkShare获取588030.SZ日线数据
+2025-09-15 15:13:02,825 - src.data_acquisition.data_fetcher - ERROR - AkShare获取588030.SZ日线数据失败: stock_zh_a_daily() got an unexpected keyword argument 'period'
+2025-09-15 15:13:02,825 - src.data_acquisition.data_fetcher - ERROR - 所有数据源获取588030.SZ日线数据均失败
+2025-09-15 15:13:02,826 - StockTraderVisualization - WARNING - 无法获取股票代码 588030.SZ 的数据，将使用模拟数据

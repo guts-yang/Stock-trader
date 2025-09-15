@@ -1,0 +1,8 @@
+2025-09-15 10:03:18,171 - StockTrader - INFO - 运行示例: backtest_example
+2025-09-15 10:03:18,215 - StockTrader - ERROR - 示例运行出错: name 'Optional' is not defined
+2025-09-15 10:04:41,368 - StockTrader - INFO - 运行示例: backtest_example
+2025-09-15 10:04:41,373 - StockTrader - INFO - 示例运行完成
+2025-09-15 10:08:00,977 - StockTrader - INFO - 运行示例: backtest_example
+2025-09-15 10:08:00,977 - StockTrader - INFO - 示例运行完成
+2025-09-15 10:30:14,586 - StockTrader - INFO - 运行示例: backtest_example
+2025-09-15 10:30:14,590 - StockTrader - INFO - 示例运行完成

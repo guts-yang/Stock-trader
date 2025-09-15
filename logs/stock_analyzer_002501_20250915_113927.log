@@ -1,0 +1,9 @@
+2025-09-15 11:39:27,738 - StockAnalyzer_002501 - INFO - 股票分析器初始化完成，股票代码: 002501
+2025-09-15 11:39:27,877 - StockAnalyzer_002501 - INFO - 开始对股票 002501 进行全面分析
+2025-09-15 11:39:27,878 - StockAnalyzer_002501 - INFO - 尝试加载股票 002501 的数据
+2025-09-15 11:39:27,879 - StockAnalyzer_002501 - WARNING - 数据文件不存在: D:\coding\data\002501.csv
+2025-09-15 11:39:27,880 - StockAnalyzer_002501 - INFO - 为股票 002501 生成模拟数据，日期范围: 2020-01-01 至 2023-12-31
+2025-09-15 11:39:28,105 - StockAnalyzer_002501 - INFO - 模拟数据已保存到: D:\coding\data\002501.csv
+2025-09-15 11:39:28,137 - StockAnalyzer_002501 - INFO - 筛选后的数据日期范围: 2020-01-02 00:00:00 至 2023-12-29 00:00:00
+2025-09-15 11:39:28,142 - StockAnalyzer_002501 - INFO - 开始计算技术指标
+2025-09-15 11:39:28,144 - StockAnalyzer_002501 - ERROR - 分析过程中发生错误: 'TechnicalIndicators' object has no attribute 'moving_average'
