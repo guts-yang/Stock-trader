@@ -1,0 +1,218 @@
+# PyQuantTrader 配置文件
+
+# 数据源配置
+data_sources:
+  tushare:
+    api_key: '69928e0046d63ab5cb45b1e54e787af2773cdfd7e18159a72cc562b0'  # 需要替换为实际的 Tushare API Key
+    retry_count: 3
+    timeout: 30
+  akshare:
+    use_cache: true
+    cache_dir: '../data/cache'
+
+# 数据库配置
+database:
+  type: 'sqlite'
+  path: '../data/stock_data.db'
+  echo: false  # 是否打印 SQL 语句
+
+# 数据处理配置
+data_processing:
+  date_range:
+    start: '2018-01-01'
+    end: '2023-12-31'
+  stocks: ['000001.SZ', '600000.SH']  # 示例股票列表
+  batch_size: 1000
+  fill_method: 'ffill'  # 缺失值填充方法
+  normalize_method: 'zscore'  # 标准化方法: zscore 或 minmax
+  save_raw_data: true
+  save_processed_data: true
+
+# 特征工程配置
+feature_engineering:
+  technical_indicators:
+    - name: 'MACD'
+      params: {fastperiod: 12, slowperiod: 26, signalperiod: 9}
+    - name: 'RSI'
+      params: {timeperiod: 14}
+    - name: 'BBANDS'
+      params: {timeperiod: 20, nbdevup: 2, nbdevdn: 2}
+    - name: 'MA'
+      params: {timeperiod: 5}
+    - name: 'MA'
+      params: {timeperiod: 10}
+    - name: 'MA'
+      params: {timeperiod: 20}
+    - name: 'MA'
+      params: {timeperiod: 60}
+  fundamental_factors: ['PE', 'PB', 'ROE', 'EPS', 'MarketCap']
+  sentiment_analysis:
+    enable: true
+    source: 'local_news'  # 可以是 'local_news' 或 'online_api'
+  feature_dimension: 128
+  ic_test_period: 20  # IC 值计算周期
+
+# 模型配置
+model:
+  type: 'lstm_transformer'
+  input_seq_length: 60  # 输入序列长度
+  lstm_units: 128
+  transformer_layers: 3
+  transformer_heads: 4
+  transformer_units: 256
+  dropout_rate: 0.3
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.001
+  early_stopping_patience: 10
+  model_save_path: '../models/saved_model'
+  use_custom_loss: true
+  custom_loss_params:
+    sharpe_weight: 0.3
+
+# 回测引擎配置
+backtesting_engine:
+  general:
+    initial_capital: 1000000  # 初始资金
+    commission: 0.0003  # 佣金率
+    slippage: 0.0001  # 滑点
+    benchmark: '000300.SH'  # 基准指数
+    data_frequency: 'daily'  # 数据频率: daily, weekly, monthly
+    time_zone: 'Asia/Shanghai'  # 时区
+    
+  strategy:
+    moving_average_cross:
+      short_period: 5
+      long_period: 20
+    rsi:
+      period: 14
+      overbought: 70
+      oversold: 30
+    macd:
+      fast_period: 12
+      slow_period: 26
+      signal_period: 9
+      
+  backtester:
+    enable_parallel: false
+    max_workers: 4
+    cache_results: true
+    cache_dir: '../data/cache/backtest'
+    optimization:
+      enable: true
+      algorithm: 'dqn'  # 强化学习优化算法
+      param_search_space:
+        lookback_period: [30, 60, 90]
+        position_size: [0.05, 0.1, 0.15]
+        stop_loss: [-0.03, -0.05, -0.07]
+    kelly_criterion:
+      enable: true
+      risk_free_rate: 0.02
+    
+  performance_analysis:
+    report_format: ['json', 'html']
+    chart_type: 'plotly'  # plotly 或 matplotlib
+    save_figures: true
+    figures_dir: '../docs/figures'
+    rolling_window: 252  # 滚动窗口大小(交易日)
+
+# 风险管理配置
+risk_management:
+  risk_metrics:
+    VaR:
+      method: 'historical'  # historical, parametric, monte_carlo
+      confidence_level: 0.95
+      lookback_period: 252
+    CVaR:
+      enable: true
+    volatility:
+      method: 'ewma'  # standard, ewma, garch
+      lambda: 0.94  # EWMA衰减因子
+    sharpe_ratio:
+      risk_free_rate: 0.02
+    sortino_ratio:
+      target_return: 0.05
+    drawdown:
+      max_allowed: 0.2  # 最大允许回撤比例
+      recovery_time: 60  # 最大允许恢复时间(交易日)
+  
+  portfolio_optimization:
+    methods:
+      mean_variance:
+        risk_aversion: 1.0
+      risk_parity:
+        risk_contribution: 'equal'
+      max_sharpe:
+        risk_free_rate: 0.02
+    constraints:
+      min_weight: 0.01
+      max_weight: 0.2
+      sector_limits: {}
+    rebalance:
+      frequency: 'monthly'  # daily, weekly, monthly, quarterly
+      transaction_cost: 0.001
+  
+  drawdown_management:
+    levels:
+      warning: 0.05
+      alert: 0.10
+      critical: 0.15
+    actions:
+      warning: 'reduce_position'
+      alert: 'partial_exit'
+      critical: 'full_exit'
+    recovery_strategy: 'dollar_cost_averaging'
+    recovery_period: 90  # 恢复期(交易日)
+  
+  stress_testing:
+    scenarios:
+      market_crash: -0.3
+      sector_rotation: 0.15
+      liquidity_crisis: 0.2
+    historical_scenarios: ['2008', '2015', '2020']
+
+# 实盘交易配置
+trading:
+  mode: 'simulation'  # 'simulation' 或 'real'
+  platform: '同花顺'  # 交易平台
+  account:
+    username: 'your_username'
+    password: 'your_password'
+  order_execution:
+    max_position_per_stock: 0.1  # 单只股票最大仓位比例
+    order_type: 'limit'  # 'market' 或 'limit'
+  monitor_interval: 60  # 监控间隔(秒)
+
+# 风险控制配置
+risk_management:
+  var_calculation:
+    enable: true
+    confidence_level: 0.95
+    lookback_days: 252
+  industry_concentration:
+    max_concentration: 0.3  # 单一行业最大仓位比例
+  blacklist:
+    stocks: []
+  stop_loss:
+    enable: true
+    threshold: -0.05  # 止损阈值
+  volatility_adjustment:
+    enable: true
+    high_volatility_threshold: 0.03  # 高波动率阈值
+    low_volatility_threshold: 0.005  # 低波动率阈值
+
+# 可视化配置
+visualization:
+  server:
+    host: '127.0.0.1'
+    port: 8050
+    debug: true
+  refresh_interval: 60  # 刷新间隔(秒)
+  theme: 'plotly_dark'
+
+# 日志配置
+logging:
+  level: 'INFO'
+  file_path: '../logs/pyquanttrader.log'
+  rotation: 'daily'  # 日志滚动周期
+backup_count: 30
