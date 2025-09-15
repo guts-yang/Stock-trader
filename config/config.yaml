@@ -3,7 +3,7 @@
 # 数据源配置
 data_sources:
   tushare:
-    api_key: '69928e0046d63ab5cb45b1e54e787af2773cdfd7e18159a72cc562b0'  # 需要替换为实际的 Tushare API Key
+    api_key: 'xxxxxxxxxxxxxxxxxx'  # 需要替换为实际的 Tushare API Key (Token)
     retry_count: 3
     timeout: 30
   akshare:
