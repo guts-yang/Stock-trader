@@ -223,12 +223,49 @@ python main.py portfolio --method max_sharpe --report results/portfolio_optimiza
 
 - 回测结果不代表未来表现
 - 实盘交易存在风险，请谨慎操作
+
+## 技术支持
+
+### 编程语言
+- **主要语言**: Python 3.8+
+
+### 核心依赖包
+- **数据处理**: pandas, numpy, scipy
+- **可视化**: streamlit, matplotlib, plotly, seaborn
+- **机器学习**: tensorflow, keras, scikit-learn, optuna
+- **数据获取**: tushare, akshare
+- **高性能计算**: numba
+- **配置管理**: pyyaml
+- **日志管理**: logging, loguru
+
+### 数据库支持
+- **本地存储**: SQLite
+- **缓存机制**: 内存缓存和文件缓存
+
+### 系统兼容性
+- **操作系统**: Windows, macOS, Linux
+- **浏览器支持**: Chrome 90+、Firefox 88+、Safari 14+、Edge 90+
+
+### 技术架构
+- **模块化设计**: 各功能模块松耦合，便于扩展和维护
+- **数据流**: 数据获取 → 特征工程 → 模型预测 → 策略回测 → 风险管理 → 交易执行 → 可视化展示
+- **设计模式**: 采用工厂模式、策略模式、观察者模式等设计模式
+
+### 性能优化
+- **数据处理优化**: 向量化计算、并行处理
+- **缓存策略**: 多级缓存机制，减少重复计算
+- **资源管理**: 内存优化、批处理
+
+### API支持
+- **数据源API**: Tushare, AkShare
+- **交易API**: 预留接口，支持对接主流券商API
+
+### 开发环境
+- **推荐IDE**: VS Code、PyCharm
+- **代码管理**: Git
+- **CI/CD**: 预留GitHub Actions配置
 - 定期更新数据源API密钥
 - 保持系统和依赖包更新
-
-## 许可证
-
-[MIT License](LICENSE)
 
 ## 免责声明
 
