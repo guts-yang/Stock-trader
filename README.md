@@ -44,7 +44,7 @@
 
 1. **克隆仓库**
    ```bash
-   git clone https://github.com/guts-yang/stocktrader.git
+   git clone https://github.com/guts-yang/Stock-trader.git
    cd stocktrader
    ```
 
